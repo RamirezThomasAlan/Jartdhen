@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARTDHEN - Juego del Ahorcado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="game-title">
+                <div class="game-name">JARTDHEN</div>
+                <div class="game-subtitle">Juego del Ahorcado</div>
+            </div>
+            <p>Adivina la palabra antes de que se complete el ahorcado</p>
+        </header>
+        
+        <div class="game-info">
+            <div id="score">Palabras: <span id="correct-words">0</span>/20</div>
+            <div id="remaining">Intentos: <span id="attempts-left">6</span>/6</div>
+        </div>
+        
+        <div class="level-indicator" id="level-indicator">Nivel: Palabras de 3 letras</div>
+        
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        
+        <div class="hangman-container">
+            <div class="hangman-drawing">
+                <div class="base"></div>
+                <div class="post"></div>
+                <div class="beam"></div>
+                <div class="rope"></div>
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="left-arm"></div>
+                <div class="right-arm"></div>
+                <div class="left-leg"></div>
+                <div class="right-leg"></div>
+            </div>
+        </div>
+        
+        <div class="word-display" id="word-display"></div>
+        
+        <div class="message" id="message"></div>
+        
+        <div class="keyboard" id="keyboard">
+            <!-- Los botones del teclado se generarán con JavaScript -->
+        </div>
+        
+        <div class="hint-counter" id="hint-counter">Pistas disponibles: 0</div>
+        
+        <div>
+            <button class="btn hint-btn" id="hint-btn" disabled>Pista</button>
+            <button class="btn play-btn" id="play-btn">Jugar</button>
+        </div>
+        
+        <div class="instructions">
+            <h2>¿Cómo jugar?</h2>
+            <p>El objetivo es adivinar la palabra letra por letra antes de que se complete el dibujo del ahorcado.</p>
+            <ul>
+                <li>Haz clic en las letras que crees que están en la palabra</li>
+                <li>Cada error suma un intento fallido y avanza el dibujo</li>
+                <li>Si aciertas 20 palabras, ¡ganas el juego!</li>
+                <li>Por cada 5 palabras acertadas, ganas una pista</li>
+                <li>Las palabras aumentan de longitud cada 3 aciertos</li>
+            </ul>
+            <p>¡Usa las pistas sabiamente! Solo puedes usarlas en niveles posteriores.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="intro-modal">
+        <div class="modal-content">
+            <h2>¡Bienvenido a JARTDHEN!</h2>
+            <p>Tu objetivo es adivinar 20 palabras para ganar el juego.</p>
+            <p>Empezarás con palabras de 3 letras e irán aumentando de longitud cada 3 aciertos.</p>
+            <p>Por cada 5 palabras que aciertes, ganarás una pista que podrás usar en niveles posteriores.</p>
+            <p>¡Cuidado! Solo tienes 6 intentos por palabra.</p>
+            <button class="modal-btn" id="start-btn">Comenzar Juego</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@ Disfrutá del clásico juego de adivinar palabras con un **toque visual atractiv
 [![Ver Demo](https://img.shields.io/badge/Ver_Demo-%2520-%2520?style=for-the-badge&logo=github&logoColor=white&labelColor=000000&color=00ff00)](https://ramirezthomasalan.github.io/Jartdhen/?utm_source=chatgpt.com)
 
 ## 📸 Captura de Pantalla
-![Captura del juego](https://preview.PNG)
+![Captura del juego](preview.png)
 
 ## 🛠️ Tecnologías usadas
 - **HTML5**
@@ -63,4 +63,4 @@ Libre para usar, modificar y compartir.
 ¡Dejá una ⭐ en GitHub y compartilo!  
 Este juego es mi forma de combinar **diseño atractivo y programación funcional** con un clásico juego de palabras.  
 
-¡Gracias por jugar **JARTDHEN**! 🎯📚
+# ¡Gracias por jugar **JARTDHEN**! 🎯📚
